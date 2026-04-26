@@ -903,13 +903,17 @@ footer {
 }
 
 .footer-contact a {
-    color: var(--gold-dim);
+    color: #ffd700;
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.4), 0 0 10px rgba(255, 140, 0, 0.2);
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
 }
 
 .footer-contact a:hover {
-    color: var(--gold);
+    color: #fffacd;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8), 0 0 15px rgba(255, 140, 0, 0.6);
 }
 
 .footer-contact span {
