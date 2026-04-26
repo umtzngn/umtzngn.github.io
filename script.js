@@ -30,6 +30,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
+        // If user scrolled to the very bottom, force the last section
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+            current = 'hobbies';
+        }
+
         navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
