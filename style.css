@@ -889,3 +889,29 @@ footer {
     transform: scale(1.2);
     color: #fff;
 }
+
+/* Footer Contacts */
+.footer-contact {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-contact a {
+    color: var(--gold-dim);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: var(--gold);
+}
+
+.footer-contact span {
+    color: var(--border-subtle);
+}
