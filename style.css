@@ -806,7 +806,7 @@ footer {
     }
 
     #navbar {
-        padding: 0.6rem 1.5rem;
+        padding: 0.6rem 1.2rem;
     }
 
     .nav-logo {
@@ -814,15 +814,16 @@ footer {
     }
 
     .nav-socials {
-        display: none;
+        display: flex;
+        gap: 0.8rem;
     }
 
     .nav-links {
-        gap: 1rem;
+        gap: 1.2rem;
     }
 
     .nav-link {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         letter-spacing: 1.2px;
     }
 
@@ -833,16 +834,30 @@ footer {
 
 @media (max-width: 480px) {
     #navbar {
-        padding: 0.5rem 0.8rem;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .nav-logo svg {
+        width: 24px;
+        height: 29px;
     }
 
     .nav-links {
-        gap: 0.7rem;
+        gap: 0.6rem;
     }
 
     .nav-link {
-        font-size: 0.65rem;
+        font-size: 0.58rem;
         letter-spacing: 0.5px;
+    }
+
+    .nav-socials {
+        gap: 0.5rem;
+    }
+
+    .social-icon svg {
+        width: 16px;
+        height: 16px;
     }
 }
 
