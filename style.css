@@ -805,8 +805,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    #navbar {
+        padding: 0.6rem 1.5rem;
+    }
+
     .nav-logo {
-        display: none;
+        display: flex;
     }
 
     .nav-socials {
@@ -814,16 +818,31 @@ footer {
     }
 
     .nav-links {
-        gap: 1.2rem;
+        gap: 1rem;
     }
 
     .nav-link {
-        font-size: 0.65rem;
-        letter-spacing: 1.5px;
+        font-size: 0.7rem;
+        letter-spacing: 1.2px;
     }
 
     .hobbies-grid {
         gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .nav-links {
+        gap: 0.7rem;
+    }
+
+    .nav-link {
+        font-size: 0.65rem;
+        letter-spacing: 0.5px;
     }
 }
 
