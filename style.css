@@ -740,16 +740,17 @@ footer {
     #hero {
         position: relative;
         height: 100vh;
-        min-height: 560px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 100dvh;
+        min-height: 500px;
+        padding: 0;
+        max-width: 100%;
         overflow: hidden;
     }
 
     .hero-bg {
         position: absolute;
-        inset: 0;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         z-index: 0;
@@ -759,34 +760,68 @@ footer {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: left center;
+        object-position: 25% center;
     }
 
     .hero-overlay {
         position: absolute;
-        inset: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         z-index: 1;
-        background: rgba(10, 15, 10, 0.65);
+        background: rgba(10, 15, 10, 0.6);
+        pointer-events: none;
     }
 
     .hero-content {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto;
-        padding: 2rem 1.5rem;
+        padding: 4rem 1.5rem 2rem;
+        max-width: 100%;
     }
 
     .hero-text {
         margin-right: 0;
         max-width: 100%;
-        padding: 0;
+        padding: 0 1rem;
+        text-align: center;
     }
 
-    .hero-name, .hero-title { font-size: 2.5rem; }
+    .hero-greeting {
+        font-size: 1.1rem;
+    }
+
+    .hero-name, .hero-title {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .btn-primary {
+        font-size: 0.7rem;
+        padding: 10px 24px;
+    }
+
+    .scroll-indicator {
+        margin-top: 1.5rem;
+    }
 
     .about-overlay {
         position: relative;
